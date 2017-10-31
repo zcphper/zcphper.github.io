@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zcphper.github.io/"/>
-  <updated>2017-10-31T06:54:37.133Z</updated>
+  <updated>2017-10-31T09:34:36.087Z</updated>
   <id>http://zcphper.github.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://zcphper.github.io/2017/10/30/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/"/>
     <id>http://zcphper.github.io/2017/10/30/我的博客/</id>
     <published>2017-10-30T15:28:11.251Z</published>
-    <updated>2017-10-31T06:54:37.133Z</updated>
+    <updated>2017-10-31T09:34:36.087Z</updated>
     
-    <content type="html"><![CDATA[<p>我记得11年当程序员的时候就想要一个能自己控制记录自己学习和心情的独立博客，当时直接用dedecms买了个域名和空间就搭建了一个博客，却因为没有沉下心坚持下去，很多平台比如博客园、csdn也注册了博客，一样自己太懒都没有用下去。走了这么多年，也许是生活沉淀我特别想开始记录自己成长，因为我回头发现，我到底做了什么我都不知道。可能我确实没做什么能值得记忆的。<br>现在我需要从新审视自己，记录自己，看清自己。</p>]]></content>
+    <content type="html"><![CDATA[<p>我记得11年当程序员的时候就想要一个能自己控制记录自己学习和心情的独立博客，当时直接用dedecms买了个域名和空间就搭建了一个博客，却因为没有沉下心坚持下去，很多平台比如博客园、csdn也注册了博客，一样自己太懒都没有用下去。走了这么多年，也许是生活沉淀我特别想开始记录自己成长，因为我回头发现，我到底做了什么我都不知道。可能我确实没做什么能值得记忆。<br>现在我需要从新审视自己，记录自己，看清自己。</p><p>不过！我擦这个博客真的弄死人，当初想着是不是typecho或者wordpress搭建一个。。。最近又在玩github干脆在搭个静态博客，而且还不用服务器，果真不花钱的东西就得花时间弄真的是真理。后来访问速度又觉得不行同步到另一个平台coding上。<br>还好程序员这么多年让自己有耐心遇到问题就again and again直到问题解决。</p><p>好了！搭建和踩坑过程我将在分类的“hexo”中写出。</p>]]></content>
     
     <summary type="html">
     
