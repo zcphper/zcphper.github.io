@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zcphper.github.io/"/>
-  <updated>2017-10-31T09:34:36.087Z</updated>
+  <updated>2017-11-03T09:19:01.008Z</updated>
   <id>http://zcphper.github.io/</id>
   
   <author>
@@ -17,13 +17,35 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>我的博客</title>
-    <link href="http://zcphper.github.io/2017/10/30/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/"/>
-    <id>http://zcphper.github.io/2017/10/30/我的博客/</id>
-    <published>2017-10-30T15:28:11.251Z</published>
-    <updated>2017-10-31T09:34:36.087Z</updated>
+    <title>sublime text 3作为markdown编辑器实时预览</title>
+    <link href="http://zcphper.github.io/2017/11/03/sublimemarkdown.html"/>
+    <id>http://zcphper.github.io/2017/11/03/sublimemarkdown.html</id>
+    <published>2017-11-03T02:25:07.256Z</published>
+    <updated>2017-11-03T09:19:01.008Z</updated>
     
-    <content type="html"><![CDATA[<p>我记得11年当程序员的时候就想要一个能自己控制记录自己学习和心情的独立博客，当时直接用dedecms买了个域名和空间就搭建了一个博客，却因为没有沉下心坚持下去，很多平台比如博客园、csdn也注册了博客，一样自己太懒都没有用下去。走了这么多年，也许是生活沉淀我特别想开始记录自己成长，因为我回头发现，我到底做了什么我都不知道。可能我确实没做什么能值得记忆。<br>现在我需要从新审视自己，记录自己，看清自己。</p><p>不过！我擦这个博客真的弄死人，当初想着是不是typecho或者wordpress搭建一个。。。最近又在玩github干脆在搭个静态博客，而且还不用服务器，果真不花钱的东西就得花时间弄真的是真理。后来访问速度又觉得不行同步到另一个平台coding上。<br>还好程序员这么多年让自己有耐心遇到问题就again and again直到问题解决。</p><p>好了！搭建和踩坑过程我将在分类的“hexo”中写出。</p>]]></content>
+    <content type="html"><![CDATA[<h3 id="第一步安装插件"><a href="#第一步安装插件" class="headerlink" title="第一步安装插件"></a>第一步安装插件</h3><ul><li>安装<strong>MarkDown Editing</strong>（编辑和语法高亮支持 ）和<strong>Markdown Preview</strong>插件（导出html预览支持 ）</li><li>ctrl+shift+p, 然后输入 Install Package</li><li>输入Markdown Editing, 回车</li><li><strong>注</strong>：如果你安装Markdown Editing完之后，遇到了如下的错误，那么你安装的时候可能开着一个Markdown文件，所以卸载完之后在不打开Markdown的情况下再次安装就可以解决了。</li></ul><p><img src="http://oyto4xbui.bkt.clouddn.com/sublimemarkdown1.png" width="400"></p><ul><li>同样安装Markdown Preview, 回车</li></ul><h3 id="第二步配置插件"><a href="#第二步配置插件" class="headerlink" title="第二步配置插件"></a>第二步配置插件</h3><ul><li>Preferences → Package Settings → Markdown Preview → Setting 打开后将左边default的设置代码复制到右边User栏，之后找到”enable_autoreload”: flase,把flase改成true（这部分很重要），重启sublime text3.</li></ul><h3 id="第三步使用"><a href="#第三步使用" class="headerlink" title="第三步使用"></a>第三步使用</h3><ul><li>新建一个md文件</li><li>按下ctrl+shift+P打开快速菜单，键入’mp’</li></ul><p><img src="http://oyto4xbui.bkt.clouddn.com/sublimemarkdown2.png" width="600"></p><ul><li>现在可以在浏览器看到，md每修改一次保存，刷新游览器就可以及时看到了。</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      sublime text 3作为markdown编辑器
+    
+    </summary>
+    
+      <category term="sublime text" scheme="http://zcphper.github.io/categories/sublime-text/"/>
+    
+    
+      <category term="markdown" scheme="http://zcphper.github.io/tags/markdown/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>我的博客</title>
+    <link href="http://zcphper.github.io/2017/10/30/myblog.html"/>
+    <id>http://zcphper.github.io/2017/10/30/myblog.html</id>
+    <published>2017-10-30T15:28:11.251Z</published>
+    <updated>2017-11-02T13:15:58.707Z</updated>
+    
+    <content type="html"><![CDATA[<p>我记得11年当程序员的时候就想要一个能自己控制记录自己学习和心情的独立博客，当时直接用dedecms买了个域名和空间就搭建了一个博客，却因为没有沉下心坚持下去，很多平台比如博客园、csdn也注册了博客，<br>一样自己太懒都没有用下去。走了这么多年，也许是生活沉淀我特别想开始记录自己成长<br>，因为我回头发现，我到底做了什么我都不知道。可能我确实没做什么能值得记忆。<br>现在我需要从新审视自己，记录自己，看清自己。</p><p>不过！我擦这个博客真的弄死人，当初想着是不是typecho或者wordpress搭建一个。。。最近又在玩github干脆在搭个静态博客，而且还不用服务器，果真不花钱的东西就得花时间弄真的是真理。后来访问速度又觉<br>得不行同步到另一个平台coding上。还好程序员这么多年让自己有耐心遇到问题就again and again直到问题解决。<br>好了！搭建和踩坑过程我将在分类的“hexo”中写出。</p>]]></content>
     
     <summary type="html">
     
