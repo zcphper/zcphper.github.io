@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zcphper.github.io/"/>
-  <updated>2017-11-03T09:19:01.008Z</updated>
+  <updated>2017-11-04T05:03:13.186Z</updated>
   <id>http://zcphper.github.io/</id>
   
   <author>
@@ -17,17 +17,39 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>sublime text 3作为markdown编辑器实时预览</title>
-    <link href="http://zcphper.github.io/2017/11/03/sublimemarkdown.html"/>
-    <id>http://zcphper.github.io/2017/11/03/sublimemarkdown.html</id>
-    <published>2017-11-03T02:25:07.256Z</published>
-    <updated>2017-11-03T09:19:01.008Z</updated>
+    <title>mysql追踪调试神器phpgjx2.0工具箱</title>
+    <link href="http://zcphper.github.io/2017/11/04/php_phpgjx.html"/>
+    <id>http://zcphper.github.io/2017/11/04/php_phpgjx.html</id>
+    <published>2017-11-04T03:53:10.705Z</published>
+    <updated>2017-11-04T05:03:13.186Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="第一步安装插件"><a href="#第一步安装插件" class="headerlink" title="第一步安装插件"></a>第一步安装插件</h3><ul><li>安装<strong>MarkDown Editing</strong>（编辑和语法高亮支持 ）和<strong>Markdown Preview</strong>插件（导出html预览支持 ）</li><li>ctrl+shift+p, 然后输入 Install Package</li><li>输入Markdown Editing, 回车</li><li><strong>注</strong>：如果你安装Markdown Editing完之后，遇到了如下的错误，那么你安装的时候可能开着一个Markdown文件，所以卸载完之后在不打开Markdown的情况下再次安装就可以解决了。</li></ul><p><img src="http://oyto4xbui.bkt.clouddn.com/sublimemarkdown1.png" width="400"></p><ul><li>同样安装Markdown Preview, 回车</li></ul><h3 id="第二步配置插件"><a href="#第二步配置插件" class="headerlink" title="第二步配置插件"></a>第二步配置插件</h3><ul><li>Preferences → Package Settings → Markdown Preview → Setting 打开后将左边default的设置代码复制到右边User栏，之后找到”enable_autoreload”: flase,把flase改成true（这部分很重要），重启sublime text3.</li></ul><h3 id="第三步使用"><a href="#第三步使用" class="headerlink" title="第三步使用"></a>第三步使用</h3><ul><li>新建一个md文件</li><li>按下ctrl+shift+P打开快速菜单，键入’mp’</li></ul><p><img src="http://oyto4xbui.bkt.clouddn.com/sublimemarkdown2.png" width="600"></p><ul><li>现在可以在浏览器看到，md每修改一次保存，刷新游览器就可以及时看到了。</li></ul>]]></content>
+    <content type="html"><![CDATA[<p>此工具是tpshop上学习时候看到的非常实用，只要有数据库访问就可以显示所有sql语句</p><p>下载工具<a href="http://oyto4xbui.bkt.clouddn.com/phpgjx2.0%E7%89%88.zip" title="phpgjx2.0" target="_blank" rel="external">phpgjx2.0</a></p><ul><li>修改 C:\Windows\System32\drivers\etc\hosts 文件 比如加入 127.0.0.1 www.sql.com</li><li><p>修改 apache 配置文件 D:\xampp\apache\conf\extra\httpd-vhosts.conf文件</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">  &lt;VirtualHost *:80&gt;</div><div class="line">      DocumentRoot &quot;D:/phpgjx&quot;</div><div class="line">      ServerName www.sql.com</div><div class="line">    &lt;Directory &quot;D:/phpgjx&quot;&gt;</div><div class="line">        Order deny,allow</div><div class="line">        Allow from all</div><div class="line">        Require all granted</div><div class="line">    &lt;/Directory&gt;</div><div class="line">&lt;/VirtualHost&gt;</div></pre></td></tr></table></figure></li><li><p>修改 phpgjx2文件夹中config.php 文件 配置mysql连接 重启MYSQL</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line">return array(</div><div class="line">    &apos;web_url&apos;  =&gt;&apos;http://www.sql.com/index.php&apos;, // php工具箱访问 url 根路径  能访问到你工具箱的 地址</div><div class="line">    &apos;mysql_log&apos;=&gt;&apos;D:/mysql_bz.log&apos;, // mysql 标准日志文件路径</div><div class="line">    &apos;mysql_host&apos; =&gt;&apos;localhost&apos;, //mysql连接地址</div><div class="line">    &apos;mysql_user&apos; =&gt;&apos;root&apos;, //mysql账号</div><div class="line">    &apos;mysql_password&apos; =&gt;&apos;&apos;, //mysql密码</div><div class="line">    &apos;mysql_port&apos; =&gt;&apos;3306&apos;, //mysql端口</div><div class="line">    &apos;menu&apos;=&gt;array( // 菜单配置项</div><div class="line">         &apos;在线工具&apos;=&gt;&apos;http://tool.oschina.net/&apos;,   // 如果自己配置的地址打不卡 请加上 http://   如 www.baidu.com  打不开 前面加上  http://www.baidu.com</div><div class="line">         &apos;工具百宝箱&apos;=&gt;&apos;http://tool.lu/&apos;,</div><div class="line">         &apos;运行代码&apos;=&gt;&apos;http://tool.lu/coderunner/&apos;,</div><div class="line">         &apos;模拟提交&apos;=&gt;&apos;test_request.html&apos;,</div><div class="line">         &apos;时间戳转换&apos;=&gt;&apos;http://tool.chinaz.com/Tools/unixtime.aspx&apos;,</div><div class="line">         &apos;英文翻译&apos;=&gt;&apos;http://fanyi.baidu.com/?aldtype=16047#auto/zh/&apos;,</div><div class="line">         &apos;TP手册&apos;=&gt;&apos;http://document.thinkphp.cn/manual_3_2.html&apos;,</div><div class="line">         &apos;正则测试&apos;=&gt;&apos;http://tool.oschina.net/regex&apos;,</div><div class="line">         &apos;代码比对&apos;=&gt;&apos;http://tool.oschina.net/diff&apos;,</div><div class="line">         &apos;JSON格式化&apos;=&gt;&apos;http://tool.oschina.net/codeformat/json&apos;,</div><div class="line">         &apos;phpinfo&apos;=&gt;&apos;phpinfo.php&apos;,</div><div class="line">         &apos;php探针&apos;=&gt;&apos;tz.php&apos;,</div><div class="line">         &apos;运行代码&apos;=&gt;&apos;run.php&apos;,</div><div class="line">         &apos;phpmyadmin&apos;=&gt;&apos;phpmyadmin.php&apos;,</div><div class="line">         &apos;php手册&apos;=&gt;&apos;http://www.w3school.com.cn/php/index.asp&apos;,  // http://www.tp-shop.cn/phpgjx/ip_city.php</div><div class="line">         &apos;文件复制&apos;=&gt;&apos;file_copy.php&apos;,</div><div class="line">         &apos;TPshop官网&apos;=&gt;&apos;http://www.tp-shop.cn&apos;,</div><div class="line">    ),</div><div class="line">);</div></pre></td></tr></table></figure></li><li><p>修改D:\xampp\mysql\bin\my.ini文件</p></li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">[mysqld]</div><div class="line">port= 3306</div><div class="line">socket = &quot;D:/xampp/mysql/mysql.sock&quot;</div><div class="line">basedir = &quot;D:/xampp/mysql&quot;</div><div class="line">tmpdir = &quot;D:/xampp/tmp&quot;</div><div class="line">datadir = &quot;D:/xampp/mysql/data&quot;</div><div class="line">pid_file = &quot;mysql.pid&quot;</div><div class="line"># enable-named-pipe</div><div class="line">key_buffer = 16M</div><div class="line">max_allowed_packet = 1M</div><div class="line">sort_buffer_size = 512K</div><div class="line">net_buffer_length = 8K</div><div class="line">read_buffer_size = 256K</div><div class="line">read_rnd_buffer_size = 512K</div><div class="line">myisam_sort_buffer_size = 8M</div><div class="line">log_error = &quot;D:/mysql_bz.log&quot;</div><div class="line"></div><div class="line">general_log=ON</div><div class="line">general_log_file=&quot;D:/mysql_bz.log&quot;</div></pre></td></tr></table></figure><p><img src="http://oyto4xbui.bkt.clouddn.com/php_phpgjx2.png" width="700"></p>]]></content>
     
     <summary type="html">
     
-      sublime text 3作为markdown编辑器
+      mysql调试神器phpgjx2.0app接口调试
+    
+    </summary>
+    
+      <category term="php" scheme="http://zcphper.github.io/categories/php/"/>
+    
+    
+      <category term="php" scheme="http://zcphper.github.io/tags/php/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>sublime text 3作为markdown编辑器实时预览</title>
+    <link href="http://zcphper.github.io/2017/11/03/sb_sublimemarkdown.html"/>
+    <id>http://zcphper.github.io/2017/11/03/sb_sublimemarkdown.html</id>
+    <published>2017-11-03T02:25:07.256Z</published>
+    <updated>2017-11-03T10:48:25.918Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="第一步安装插件"><a href="#第一步安装插件" class="headerlink" title="第一步安装插件"></a>第一步安装插件</h3><ul><li>安装<strong>MarkDown Editing</strong>（编辑和语法高亮支持 ）和<strong>Markdown Preview</strong>插件（导出html预览支持 ）</li><li>ctrl+shift+p, 然后输入 Install Package</li><li>输入Markdown Editing, 回车</li><li><strong>注</strong>：如果你安装Markdown Editing完之后，遇到了如下的错误，那么你安装的时候可能开着一个Markdown文件，所以卸载完之后在不打开Markdown的情况下再次安装就可以解决了。</li></ul><p><img src="http://oyto4xbui.bkt.clouddn.com/sublimemarkdown1.png" width="400"></p><ul><li>同样安装Markdown Preview, 回车</li></ul><h3 id="第二步配置插件"><a href="#第二步配置插件" class="headerlink" title="第二步配置插件"></a>第二步配置插件</h3><ul><li>Preferences → Package Settings → Markdown Preview → Setting 打开后将左边default的设置代码复制到右边User栏，之后找到”enable_autoreload”: flase,把flase改成true（这部分很重要），重启sublime text3.</li></ul><h3 id="第三步使用"><a href="#第三步使用" class="headerlink" title="第三步使用"></a>第三步使用</h3><ul><li>新建一个md文件</li><li>按下ctrl+shift+P打开快速菜单，键入’mp’</li></ul><p><img src="http://oyto4xbui.bkt.clouddn.com/sublimemarkdown2.png" width="600"></p><ul><li>现在可以在浏览器看到，md每修改一次保存，刷新游览器就可以及时看到了。</li></ul><h3 id="第四步熟悉markdown基本语法"><a href="#第四步熟悉markdown基本语法" class="headerlink" title="第四步熟悉markdown基本语法"></a>第四步熟悉markdown基本语法</h3><p><a href="http://blog.csdn.net/witnessai1/article/details/52551362" target="_blank" rel="external">http://blog.csdn.net/witnessai1/article/details/52551362</a> (有大神整理好了）</p>]]></content>
+    
+    <summary type="html">
+    
+      sublime text 3作为markdown编辑器实时预览
     
     </summary>
     
@@ -40,8 +62,8 @@
   
   <entry>
     <title>我的博客</title>
-    <link href="http://zcphper.github.io/2017/10/30/myblog.html"/>
-    <id>http://zcphper.github.io/2017/10/30/myblog.html</id>
+    <link href="http://zcphper.github.io/2017/10/30/sx_myblog.html"/>
+    <id>http://zcphper.github.io/2017/10/30/sx_myblog.html</id>
     <published>2017-10-30T15:28:11.251Z</published>
     <updated>2017-11-02T13:15:58.707Z</updated>
     

@@ -16,17 +16,23 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>404 Not Found：该页无法显示 | 开水泡书博客</title>
-  <meta property="og:type" content="website">
-<meta property="og:title" content="404 Not Found：该页无法显示">
-<meta property="og:url" content="http://zcphper.github.io/404.html">
+  <title>mysql追踪调试神器phpgjx2.0工具箱 | 开水泡书博客</title>
+  <meta name="description" content="mysql调试神器phpgjx2.0app接口调试">
+<meta name="keywords" content="php,mysql,phpgjx">
+<meta property="og:type" content="article">
+<meta property="og:title" content="mysql追踪调试神器phpgjx2.0工具箱">
+<meta property="og:url" content="http://zcphper.github.io/2017/11/04/php_phpgjx.html">
 <meta property="og:site_name" content="曾超技术博客">
+<meta property="og:description" content="mysql调试神器phpgjx2.0app接口调试">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2017-10-30T14:45:37.874Z">
+<meta property="og:image" content="http://oyto4xbui.bkt.clouddn.com/php_phpgjx2.png">
+<meta property="og:updated_time" content="2017-11-04T05:03:13.186Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="404 Not Found：该页无法显示">
+<meta name="twitter:title" content="mysql追踪调试神器phpgjx2.0工具箱">
+<meta name="twitter:description" content="mysql调试神器phpgjx2.0app接口调试">
+<meta name="twitter:image" content="http://oyto4xbui.bkt.clouddn.com/php_phpgjx2.png">
   <!-- Canonical links -->
-  <link rel="canonical" href="http://zcphper.github.io/404.html">
+  <link rel="canonical" href="http://zcphper.github.io/2017/11/04/php_phpgjx.html">
   
     <link rel="alternate" href="atom.xml" title="曾超技术博客" type="application/atom+xml">
   
@@ -309,14 +315,14 @@
   
 <main class="main" role="main">
   <div class="content">
-  <article id="page-" class="article article-type-page" itemscope itemtype="http://schema.org/BlogPosting">
+  <article id="post-php_phpgjx" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
     
     <div class="article-header">
       
         
   
     <h1 class="article-title" itemprop="name">
-      404 Not Found：该页无法显示
+      mysql追踪调试神器phpgjx2.0工具箱
     </h1>
   
 
@@ -324,12 +330,22 @@
       <div class="article-meta">
         <span class="article-date">
     <i class="fa fa-calendar-check-o"></i>
-	<a href="/404.html" class="article-date">
-	  <time datetime="2017-10-30T14:45:37.874Z" itemprop="datePublished">2017-10-30</time>
+	<a href="/2017/11/04/php_phpgjx.html" class="article-date">
+	  <time datetime="2017-11-04T03:53:10.705Z" itemprop="datePublished">2017-11-04</time>
 	</a>
 </span>
         
+  <span class="article-category">
+    <i class="fa fa-folder"></i>
+    <a class="article-category-link" href="/categories/php/">php</a>
+  </span>
+
         
+  <span class="article-tag">
+    <i class="fa fa-tag"></i>
+	<a class="article-tag-link" href="/tags/php/">php</a>
+  </span>
+
 
         
 	<span class="article-read hidden-xs">
@@ -340,14 +356,28 @@
 	</span>
 
 
-        <span class="post-comment"><i class="fa fa-commenting-o"></i> <a href="/404.html#comments" class="article-comment-link">评论</a></span>
+        <span class="post-comment"><i class="fa fa-commenting-o"></i> <a href="/2017/11/04/php_phpgjx.html#comments" class="article-comment-link">评论</a></span>
         
       </div>
       
     </div>
     <div class="article-entry markdown-body" itemprop="articleBody">
       
-        <script type="text/javascript" src="http://www.qq.com/404/search_children.js" charset="utf-8" homepageurl="http://www.zcphper.top" homepagename="回到我的主页"></script>
+        <p>此工具是tpshop上学习时候看到的非常实用，只要有数据库访问就可以显示所有sql语句</p>
+<p>下载工具<a href="http://oyto4xbui.bkt.clouddn.com/phpgjx2.0%E7%89%88.zip" title="phpgjx2.0" target="_blank" rel="external">phpgjx2.0</a></p>
+<ul>
+<li>修改 C:\Windows\System32\drivers\etc\hosts 文件 比如加入 127.0.0.1 www.sql.com</li>
+<li><p>修改 apache 配置文件 D:\xampp\apache\conf\extra\httpd-vhosts.conf文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">  &lt;VirtualHost *:80&gt;</div><div class="line">      DocumentRoot &quot;D:/phpgjx&quot;</div><div class="line">      ServerName www.sql.com</div><div class="line">    &lt;Directory &quot;D:/phpgjx&quot;&gt;</div><div class="line">        Order deny,allow</div><div class="line">        Allow from all</div><div class="line">        Require all granted</div><div class="line">    &lt;/Directory&gt;</div><div class="line">&lt;/VirtualHost&gt;</div></pre></td></tr></table></figure>
+</li>
+<li><p>修改 phpgjx2文件夹中config.php 文件 配置mysql连接 重启MYSQL</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line">return array(</div><div class="line">    &apos;web_url&apos;  =&gt;&apos;http://www.sql.com/index.php&apos;, // php工具箱访问 url 根路径  能访问到你工具箱的 地址</div><div class="line">    &apos;mysql_log&apos;=&gt;&apos;D:/mysql_bz.log&apos;, // mysql 标准日志文件路径</div><div class="line">    &apos;mysql_host&apos; =&gt;&apos;localhost&apos;, //mysql连接地址</div><div class="line">    &apos;mysql_user&apos; =&gt;&apos;root&apos;, //mysql账号</div><div class="line">    &apos;mysql_password&apos; =&gt;&apos;&apos;, //mysql密码</div><div class="line">    &apos;mysql_port&apos; =&gt;&apos;3306&apos;, //mysql端口</div><div class="line">    &apos;menu&apos;=&gt;array( // 菜单配置项</div><div class="line">         &apos;在线工具&apos;=&gt;&apos;http://tool.oschina.net/&apos;,   // 如果自己配置的地址打不卡 请加上 http://   如 www.baidu.com  打不开 前面加上  http://www.baidu.com</div><div class="line">         &apos;工具百宝箱&apos;=&gt;&apos;http://tool.lu/&apos;,</div><div class="line">         &apos;运行代码&apos;=&gt;&apos;http://tool.lu/coderunner/&apos;,</div><div class="line">         &apos;模拟提交&apos;=&gt;&apos;test_request.html&apos;,</div><div class="line">         &apos;时间戳转换&apos;=&gt;&apos;http://tool.chinaz.com/Tools/unixtime.aspx&apos;,</div><div class="line">         &apos;英文翻译&apos;=&gt;&apos;http://fanyi.baidu.com/?aldtype=16047#auto/zh/&apos;,</div><div class="line">         &apos;TP手册&apos;=&gt;&apos;http://document.thinkphp.cn/manual_3_2.html&apos;,</div><div class="line">         &apos;正则测试&apos;=&gt;&apos;http://tool.oschina.net/regex&apos;,</div><div class="line">         &apos;代码比对&apos;=&gt;&apos;http://tool.oschina.net/diff&apos;,</div><div class="line">         &apos;JSON格式化&apos;=&gt;&apos;http://tool.oschina.net/codeformat/json&apos;,</div><div class="line">         &apos;phpinfo&apos;=&gt;&apos;phpinfo.php&apos;,</div><div class="line">         &apos;php探针&apos;=&gt;&apos;tz.php&apos;,</div><div class="line">         &apos;运行代码&apos;=&gt;&apos;run.php&apos;,</div><div class="line">         &apos;phpmyadmin&apos;=&gt;&apos;phpmyadmin.php&apos;,</div><div class="line">         &apos;php手册&apos;=&gt;&apos;http://www.w3school.com.cn/php/index.asp&apos;,  // http://www.tp-shop.cn/phpgjx/ip_city.php</div><div class="line">         &apos;文件复制&apos;=&gt;&apos;file_copy.php&apos;,</div><div class="line">         &apos;TPshop官网&apos;=&gt;&apos;http://www.tp-shop.cn&apos;,</div><div class="line">    ),</div><div class="line">);</div></pre></td></tr></table></figure>
+</li>
+<li><p>修改D:\xampp\mysql\bin\my.ini文件</p>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">[mysqld]</div><div class="line">port= 3306</div><div class="line">socket = &quot;D:/xampp/mysql/mysql.sock&quot;</div><div class="line">basedir = &quot;D:/xampp/mysql&quot;</div><div class="line">tmpdir = &quot;D:/xampp/tmp&quot;</div><div class="line">datadir = &quot;D:/xampp/mysql/data&quot;</div><div class="line">pid_file = &quot;mysql.pid&quot;</div><div class="line"># enable-named-pipe</div><div class="line">key_buffer = 16M</div><div class="line">max_allowed_packet = 1M</div><div class="line">sort_buffer_size = 512K</div><div class="line">net_buffer_length = 8K</div><div class="line">read_buffer_size = 256K</div><div class="line">read_rnd_buffer_size = 512K</div><div class="line">myisam_sort_buffer_size = 8M</div><div class="line">log_error = &quot;D:/mysql_bz.log&quot;</div><div class="line"></div><div class="line">general_log=ON</div><div class="line">general_log_file=&quot;D:/mysql_bz.log&quot;</div></pre></td></tr></table></figure>
+<p><img src="http://oyto4xbui.bkt.clouddn.com/php_phpgjx2.png" width="700"></p>
 
       
     </div>
@@ -357,7 +387,7 @@
     
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="http://zcphper.github.io//404.html" title="404 Not Found：该页无法显示" target="_blank" rel="external">http://zcphper.github.io//404.html</a>
+      <a href="http://zcphper.github.io/2017/11/04/php_phpgjx.html" title="mysql追踪调试神器phpgjx2.0工具箱" target="_blank" rel="external">http://zcphper.github.io/2017/11/04/php_phpgjx.html</a>
     </li>
     
     <li class="post-copyright-license">
@@ -388,12 +418,29 @@
   </article>
   
     
+  <section id="comments">
+  	
+       
+    <div id="uyan_frame"></div>
+
+    
+  </section>
+
 
   
 </div>
 
   <nav class="bar bar-footer clearfix" data-stick-bottom>
   <div class="bar-inner">
+  
+  <ul class="pager pull-left">
+    
+    
+    <li class="next">
+      <a href="/2017/11/03/sb_sublimemarkdown.html" title="sublime text 3作为markdown编辑器实时预览">下一篇&nbsp;&nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+    </li>
+    
+  </ul>
   
   
   <!-- Button trigger modal -->
@@ -504,6 +551,13 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
 
 
     
+    
+        
+    
+<script>var uyan_config = {'du':'zcphper.top'};</script>
+    <script defer type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=1641788"></script>
+
+
     
     
 
