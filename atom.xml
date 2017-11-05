@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zcphper.github.io/"/>
-  <updated>2017-11-04T05:03:13.186Z</updated>
+  <updated>2017-11-05T03:50:56.762Z</updated>
   <id>http://zcphper.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>mui助手h.js，8k文件的dom操作</title>
+    <link href="http://zcphper.github.io/2017/11/05/mui-hjs.html"/>
+    <id>http://zcphper.github.io/2017/11/05/mui-hjs.html</id>
+    <published>2017-11-05T02:50:37.000Z</published>
+    <updated>2017-11-05T03:50:56.762Z</updated>
+    
+    <content type="html"><![CDATA[<p>mui使用的是原生js dom操作，知道jquery就是方便js的dom操作，和jq比较h.js更小、更轻（同样的功能对比，h.js 只有8K!）具体语法如果学过jquery那就更简单了，语法和相似，配合mui更高效，更适合移动app开发。<br>而且h.js 提供方便扩展接口可以快速封装自己的插件。（真不是广告确实好用）<br>下载h.js 官网地址<br><a href="http://www.hcoder.net/h" target="_blank" rel="external">http://www.hcoder.net/h</a></p>]]></content>
+    
+    <summary type="html">
+    
+      mui助手h.js，8k文件的dom操作
+    
+    </summary>
+    
+      <category term="mui" scheme="http://zcphper.github.io/categories/mui/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>mysql追踪调试神器phpgjx2.0工具箱</title>
