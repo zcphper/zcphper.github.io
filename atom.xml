@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zcphper.github.io/"/>
-  <updated>2017-11-05T03:50:56.762Z</updated>
+  <updated>2017-11-06T03:50:36.769Z</updated>
   <id>http://zcphper.github.io/</id>
   
   <author>
@@ -17,9 +17,31 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>python为什么火，我学了有用吗？</title>
+    <link href="http://zcphper.github.io/2017/11/06/cxyw_python.html"/>
+    <id>http://zcphper.github.io/2017/11/06/cxyw_python.html</id>
+    <published>2017-11-06T03:03:48.000Z</published>
+    <updated>2017-11-06T03:50:36.769Z</updated>
+    
+    <content type="html"><![CDATA[<p>总结摘取python的疑问</p><h3 id="Python语言是在20世纪90年代诞生的，为什么现在开始火？"><a href="#Python语言是在20世纪90年代诞生的，为什么现在开始火？" class="headerlink" title="Python语言是在20世纪90年代诞生的，为什么现在开始火？"></a>Python语言是在20世纪90年代诞生的，为什么现在开始火？</h3><ul><li><strong>答：人工智能？</strong>但是现在人工智能带动了 Python 完全是某些利益者(出版社, 出书的作者, 培训机构)<br>  话说你会python就会人工智能？首先它们的执行部分都是C++/C写的，不过是提供了Python API，python作为一个桥接工具。没有坚实的算法和数学基础，建议不要碰AI。<br>  人工只能让更专业的人去做，不要以为别人硕士阶段都在吃屎。对于大部分普通的程序员，不要什么热门就往那个方向去挤，做一个更专业的程序员更好，术业有专攻。<br>  另外你几乎看不到哪家 AI 公司会所谓 Python 工程师这样的岗位招聘 。</li><li><strong>大数据？</strong>这两年特别是网络爬虫火得一塌糊涂，10个写爬虫的9个在用Python，曾经有一段时间知乎的Python话题全部被爬虫相关的帖子刷屏，为什么爬虫这么火，这个还是跟大数据有关，因为数据挖掘、分析、机器学习、人工智能都需要大数据的支撑，而真正有大数据的厂商没几个，所以小厂不得不通过爬虫去获取数据。不过爬虫会了就能找到工作？爬虫是python的入门基础，高中生花点时间都会的东西能值钱吗？<h3 id="python学好能高薪？"><a href="#python学好能高薪？" class="headerlink" title="python学好能高薪？"></a>python学好能高薪？</h3></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      python我学了干什么
+    
+    </summary>
+    
+      <category term="python" scheme="http://zcphper.github.io/categories/python/"/>
+    
+    
+      <category term="python" scheme="http://zcphper.github.io/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
     <title>mui助手h.js，8k文件的dom操作</title>
-    <link href="http://zcphper.github.io/2017/11/05/mui-hjs.html"/>
-    <id>http://zcphper.github.io/2017/11/05/mui-hjs.html</id>
+    <link href="http://zcphper.github.io/2017/11/05/mui_hjs.html"/>
+    <id>http://zcphper.github.io/2017/11/05/mui_hjs.html</id>
     <published>2017-11-05T02:50:37.000Z</published>
     <updated>2017-11-05T03:50:56.762Z</updated>
     
